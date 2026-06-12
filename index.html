@@ -111,7 +111,23 @@
 
 <section class="section" style="background:var(--white)">
   <div class="section-header fade-in"><div class="section-label">Aktualno&#347;ci</div><h2 class="section-title">Co u nas s&#322;ycha&#263;</h2><p class="section-lead">Kliknij w kart&#281; aby zobaczy&#263; pe&#322;ny opis i galeri&#281; zdj&#281;&#263;.</p></div>
-  <div class="news-grid"><article class="news-card fade-in" onclick="openModal('uniejow2026')" role="button" tabindex="0">
+  <div class="news-grid">
+<article class="news-card fade-in" onclick="openModal('maraton2026')" role="button" tabindex="0">
+  <div class="news-card-thumb">
+    <img src="img/aktualnosci/maraton_3.webp" alt="Starachowicki Maraton Aktywna 50-tka 2026" loading="lazy"/>
+    <span class="news-card-category">&#127939; Maraton</span>
+    <div class="news-card-count"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>3</div>
+  </div>
+  <div class="news-card-body">
+    <div class="news-card-date">30 maja 2026</div>
+    <h3 class="news-card-title">Starachowicki Maraton &#8222;Aktywna 50-tka&#8221; &#8211; Brawo Mariusz!</h3>
+    <p class="news-card-excerpt">Nasz kolega Mariusz z Klubu &#8222;Nadzieja&#8221; uko&#324;czy&#322; Starachowicki Maraton Aktywna 50-tka. Pasje kszta&#322;tuj&#261; charakter!</p>
+  </div>
+  <div class="news-card-footer">
+    <span class="news-card-link">Czytaj wi&#281;cej <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+  </div>
+</article>
+<article class="news-card fade-in" onclick="openModal('uniejow2026')" role="button" tabindex="0">
   <div class="news-card-thumb">
     <img src="img/aktualnosci/uniejow_1.webp" alt="Flisacza Akademia Lider&#243;w Ruchu Abstynenckiego Uniej&#243;w 2026" loading="lazy"/>
     <span class="news-card-category">&#9973;&#65039; Wyjazd</span>
@@ -191,6 +207,26 @@
   </div>
 </section>
 </main>
+<template id="event-maraton2026">
+  <div class="modal-header">
+    <div class="modal-title-group">
+      <div class="modal-date">30 maja 2026 &middot; &#127939; Maraton</div>
+      <h2 class="modal-title">Starachowicki Maraton &#8222;Aktywna 50-tka&#8221; &#8211; Brawo Mariusz!</h2>
+    </div>
+    <button class="modal-close" onclick="closeModal()">&#10005;</button>
+  </div>
+  <div class="modal-body">
+    <p>30 maja 2026 roku odby&#322; si&#281; <strong>Starachowicki Maraton &#8222;Aktywna 50-tka&#8221;</strong> &#8211; wyj&#261;tkowe wydarzenie sportowe promuj&#261;ce aktywny tryb &#380;ycia w&#347;r&#243;d mieszka&#324;c&#243;w naszego miasta.</p>
+    <p>Z ogromn&#261; dum&#261; informujemy, &#380;e nasz kolega <strong>Mariusz z Klubu Abstynenta &#8222;Nadzieja&#8221;</strong> uko&#324;czy&#322; ten maraton i odebra&#322; zas&#322;u&#380;ony dyplom! Jego udzia&#322; jest dowodem na to, &#380;e trze&#378;we &#380;ycie to &#380;ycie pe&#322;ne mo&#380;liwo&#347;ci i osi&#261;gni&#281;&#263;.</p>
+    <p style="font-style:italic;color:var(--g700);font-weight:600;font-size:1rem">&#8222;Pasje kszta&#322;tuj&#261; charakter&#8221;</p>
+    <p>&#128079; <strong>Brawo Mariusz &#8211; &#380;yczymy kolejnych sukces&#243;w!</strong></p>
+    <div class="modal-gallery">
+      <div class="modal-gal-item" onclick="openLb([{src:'img/aktualnosci/maraton_1.webp',cap:'Starachowicki Maraton Aktywna 50-tka 2026'},{src:'img/aktualnosci/maraton_2.webp',cap:'Starachowicki Maraton Aktywna 50-tka 2026'},{src:'img/aktualnosci/maraton_3.webp',cap:'Mariusz z dyplomem ukon\u0107zenia Maratonu'}],0)"><img src="img/aktualnosci/maraton_1.webp" alt="Maraton 2026" loading="lazy"/></div>
+      <div class="modal-gal-item" onclick="openLb([{src:'img/aktualnosci/maraton_1.webp',cap:'Starachowicki Maraton Aktywna 50-tka 2026'},{src:'img/aktualnosci/maraton_2.webp',cap:'Starachowicki Maraton Aktywna 50-tka 2026'},{src:'img/aktualnosci/maraton_3.webp',cap:'Mariusz z dyplomem ukon\u0107zenia Maratonu'}],1)"><img src="img/aktualnosci/maraton_2.webp" alt="Maraton 2026" loading="lazy"/></div>
+      <div class="modal-gal-item" onclick="openLb([{src:'img/aktualnosci/maraton_1.webp',cap:'Starachowicki Maraton Aktywna 50-tka 2026'},{src:'img/aktualnosci/maraton_2.webp',cap:'Starachowicki Maraton Aktywna 50-tka 2026'},{src:'img/aktualnosci/maraton_3.webp',cap:'Mariusz z dyplomem ukon\u0107zenia Maratonu'}],2)"><img src="img/aktualnosci/maraton_3.webp" alt="Mariusz z dyplomem" loading="lazy"/></div>
+    </div>
+  </div>
+</template>
 <template id="event-uniejow2026">
   <div class="modal-header">
     <div class="modal-title-group">
